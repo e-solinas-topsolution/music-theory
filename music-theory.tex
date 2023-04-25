@@ -1,0 +1,48 @@
+\documentclass[oneside]{extbook}
+\pagestyle{empty}
+\pagenumbering{gobble}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\geometry{
+    right=20mm,
+    bottom=20mm,
+    left=20mm,
+    top=20mm,
+}
+\usepackage{minitoc}
+\renewcommand{\mtctitle}{Brani}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!60!black},
+}
+
+\usepackage{afterpage}
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage
+}
+
+\usepackage{songs}
+\usepackage{amsmath}
+\setlength{\sbarheight}{0pt}
+\noversenumbers
+\nosongnumbers
+
+\title{\Huge \textbf{Music Theory}}
+\author{\Large \textbf{Elisa Solinas}}
+\date{\textbf{Aggiornato il \today}}
+
+\begin{document}
+
+    \maketitle
+    \dominitoc
+    \tableofcontents
+
+
+
+\end{document}
